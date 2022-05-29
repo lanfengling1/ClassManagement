@@ -43,11 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClaaaForm.cs">
+    <Compile Include="ClassForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClaaaForm.Designer.cs">
-      <DependentUpon>ClaaaForm.cs</DependentUpon>
+    <Compile Include="ClassForm.Designer.cs">
+      <DependentUpon>ClassForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -63,8 +63,8 @@
     <Compile Include="StuForm.Designer.cs">
       <DependentUpon>StuForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ClaaaForm.resx">
-      <DependentUpon>ClaaaForm.cs</DependentUpon>
+    <EmbeddedResource Include="ClassForm.resx">
+      <DependentUpon>ClassForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

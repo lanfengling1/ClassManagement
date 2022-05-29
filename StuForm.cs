@@ -18,22 +18,17 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (this.textBox1.Text == "")
-            {
-                this.label3.Visible = true;
-            }
-            else
-            {
-                this.label3.Visible = false;
-            }
-            if (this.textBox2.Text == "")
-            {
-                this.label4.Visible = true;
-            }
-            else
-            {
-                this.label4.Visible = false;
-            }
+           
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void 基本信息IToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

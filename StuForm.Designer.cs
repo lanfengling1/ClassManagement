@@ -29,105 +29,96 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.基本信息IToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.注册情况rToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.课程安排AToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.家庭成员信息FToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.奖惩信息RPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.奖励信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.惩罚信息ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(115, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "用户名：";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.基本信息IToolStripMenuItem,
+            this.注册情况rToolStripMenuItem,
+            this.课程安排AToolStripMenuItem,
+            this.家庭成员信息FToolStripMenuItem,
+            this.奖惩信息RPToolStripMenuItem,
+            this.toolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 25);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
-            // label2
+            // 基本信息IToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(115, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "密  码：";
+            this.基本信息IToolStripMenuItem.Name = "基本信息IToolStripMenuItem";
+            this.基本信息IToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
+            this.基本信息IToolStripMenuItem.Text = "基本信息(&I)";
+            this.基本信息IToolStripMenuItem.Click += new System.EventHandler(this.基本信息IToolStripMenuItem_Click);
             // 
-            // textBox1
+            // 注册情况rToolStripMenuItem
             // 
-            this.textBox1.Location = new System.Drawing.Point(184, 58);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 2;
+            this.注册情况rToolStripMenuItem.Name = "注册情况rToolStripMenuItem";
+            this.注册情况rToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
+            this.注册情况rToolStripMenuItem.Text = "注册情况(&R)";
             // 
-            // textBox2
+            // 课程安排AToolStripMenuItem
             // 
-            this.textBox2.Location = new System.Drawing.Point(184, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 21);
-            this.textBox2.TabIndex = 3;
+            this.课程安排AToolStripMenuItem.Name = "课程安排AToolStripMenuItem";
+            this.课程安排AToolStripMenuItem.Size = new System.Drawing.Size(84, 21);
+            this.课程安排AToolStripMenuItem.Text = "课程安排(&A)";
             // 
-            // button1
+            // 家庭成员信息FToolStripMenuItem
             // 
-            this.button1.Location = new System.Drawing.Point(117, 168);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "登录";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.家庭成员信息FToolStripMenuItem.Name = "家庭成员信息FToolStripMenuItem";
+            this.家庭成员信息FToolStripMenuItem.Size = new System.Drawing.Size(106, 21);
+            this.家庭成员信息FToolStripMenuItem.Text = "家庭成员信息(&F)";
             // 
-            // button2
+            // 奖惩信息RPToolStripMenuItem
             // 
-            this.button2.Location = new System.Drawing.Point(228, 168);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "注册";
-            this.button2.UseVisualStyleBackColor = true;
+            this.奖惩信息RPToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.奖励信息ToolStripMenuItem,
+            this.惩罚信息ToolStripMenuItem});
+            this.奖惩信息RPToolStripMenuItem.Name = "奖惩信息RPToolStripMenuItem";
+            this.奖惩信息RPToolStripMenuItem.Size = new System.Drawing.Size(86, 21);
+            this.奖惩信息RPToolStripMenuItem.Text = "奖惩信息(&N)";
             // 
-            // label3
+            // toolStripMenuItem1
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(312, 67);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 12);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "请输入用户名！";
-            this.label3.Visible = false;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 21);
             // 
-            // label4
+            // 奖励信息ToolStripMenuItem
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(312, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "请输入密码！";
-            this.label4.Visible = false;
+            this.奖励信息ToolStripMenuItem.Name = "奖励信息ToolStripMenuItem";
+            this.奖励信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.奖励信息ToolStripMenuItem.Text = "奖励信息";
+            // 
+            // 惩罚信息ToolStripMenuItem
+            // 
+            this.惩罚信息ToolStripMenuItem.Name = "惩罚信息ToolStripMenuItem";
+            this.惩罚信息ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.惩罚信息ToolStripMenuItem.Text = "惩罚信息";
             // 
             // StuForm
             // 
-            this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "StuForm";
             this.Text = "学生";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,13 +126,14 @@ namespace WindowsFormsApp1
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 基本信息IToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 注册情况rToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 课程安排AToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 家庭成员信息FToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 奖惩信息RPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem 奖励信息ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 惩罚信息ToolStripMenuItem;
     }
 }
